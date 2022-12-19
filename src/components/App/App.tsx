@@ -3,9 +3,7 @@ import { Slider } from '../Slider/Slider';
 import './App.scss';
 
 function App() {
-  return (
-    <Slider />
-  );
+  return <Slider />
 }
 
 export default App;
