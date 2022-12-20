@@ -1,27 +1,27 @@
 export const images = [
   {
     id: 1,
-    src: './images/slide-01.jpg',
-    title: 'Orange subway',
+    url: './images/slide-01.jpg',
+    desc: 'Orange subway',
   },
   {
     id: 2,
-    src: './images/slide-02.jpg',
-    title: 'Pink underground',
+    url: './images/slide-02.jpg',
+    desc: 'Pink underground',
   },
   {
     id: 3,
-    src: './images/slide-03.jpg',
-    title: 'Blue smoke',
+    url: './images/slide-03.jpg',
+    desc: 'Blue smoke',
   },
   {
     id: 4,
-    src: './images/slide-04.jpg',
-    title: 'Black bike',
+    url: './images/slide-04.jpg',
+    desc: 'Black bike',
   },
   {
     id: 5,
-    src: './images/slide-05.jpg',
-    title: 'Green lumin',
+    url: './images/slide-05.jpg',
+    desc: 'Green lumin',
   },
 ];
