@@ -1,5 +1,5 @@
 # UI elements
-Educational project with UI elements such as responsive navbar, modal window, simple registration form, search filter, photo slider.  
+Educational project with UI elements such as responsive navbar, modal window, simple registration form, search filter, image slider.  
 
 ## Built with
 - Create React App
