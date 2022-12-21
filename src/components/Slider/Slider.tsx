@@ -1,5 +1,5 @@
 import React, { useState, createContext } from 'react';
-import { images } from '../../store/data';
+import { images } from '../../store/images';
 import { Arrows } from '../Arrows/Arrows';
 import { Dots } from '../Dots/Dots';
 import { SliderItem, ISlideModel } from '../SliderItem/SliderItem';
@@ -40,7 +40,7 @@ export const Slider = () => {
   };
 
   return (
-    <div className="slider">
+    <div className="slider mb-3">
       <SliderContext.Provider
         value={{
           slides: items,
