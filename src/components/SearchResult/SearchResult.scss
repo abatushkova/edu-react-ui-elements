@@ -1,0 +1,28 @@
+@use '../../scss/abstracts' as *;
+
+.search-result {
+  display: flex;
+  flex-wrap: wrap;
+  font: 1.6rem/2.4rem a;
+  font-family: inherit;
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.6rem 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-surface;
+    }
+  }
+
+  &__title {
+    flex-basis: 12rem;
+    flex-shrink: 0;
+    padding-right: 1.6rem;
+    font-weight: 500;
+    @include desktop {
+      flex-basis: 20rem;
+      padding-right: 2.4rem;
+    }
+  }
+}
