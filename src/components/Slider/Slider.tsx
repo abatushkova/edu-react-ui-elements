@@ -1,12 +1,12 @@
 import React, { useState, createContext } from 'react';
-import { images } from '../../store/images';
+import { images, IImageModel } from '../../store/images';
 import { Arrows } from '../Arrows/Arrows';
 import { Dots } from '../Dots/Dots';
-import { SliderItem, ISlideModel } from '../SliderItem/SliderItem';
+import { SliderItem } from '../SliderItem/SliderItem';
 import './Slider.scss';
 
 export interface IContextModel {
-  slides: ISlideModel[];
+  slides: IImageModel[];
   slideIndex: number;
   changeSlide: (p: number) => void;
   goToSlide: (p: number) => void;
@@ -52,7 +52,7 @@ export const Slider = () => {
         { items.length > 0 ? (
           <>
             <Arrows />
-            <SliderItem data={items[slide]} />
+            <SliderItem slide={items[slide]} />
             <Dots />
           </>
         ) : null }

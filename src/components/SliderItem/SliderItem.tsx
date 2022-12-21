@@ -1,18 +1,13 @@
 import React from 'react';
+import { IImageModel } from '../../store/images';
 import './SliderItem.scss';
 
-export interface ISlideModel {
-  id: number;
-  url: string;
-  desc: string;
+interface ISlideModel {
+  slide: IImageModel;
 }
 
-interface ISlideProps {
-  data: ISlideModel;
-}
-
-export const SliderItem = (props: ISlideProps) => {
-  const { url, desc } = props.data;
+export const SliderItem = (props: ISlideModel) => {
+  const { url, desc } = props.slide;
 
   return (
     <div className="slide">

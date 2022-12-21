@@ -1,4 +1,10 @@
-export const images = [
+export interface IImageModel {
+  id: number;
+  url: string;
+  desc: string;
+}
+
+export const images: IImageModel[] = [
   {
     id: 1,
     url: './images/slide-01.jpg',
