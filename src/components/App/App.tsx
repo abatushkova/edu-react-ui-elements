@@ -1,14 +1,16 @@
 import React from 'react';
 import { Header } from '../Header/Header';
-import { Slider } from '../Slider/Slider';
+import { Footer } from '../Footer/Footer';
+import { Home } from '../Home/Home';
 import './App.scss';
 
 function App() {
   return (
-    <div className="container">
+    <>
       <Header />
-      <Slider />
-    </div>
+      <Home />
+      <Footer />
+    </>
   )
 }
 
