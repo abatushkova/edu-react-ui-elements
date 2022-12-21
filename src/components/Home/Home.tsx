@@ -1,6 +1,7 @@
 import React from 'react';
 import { Slider } from '../Slider/Slider';
 import { SearchFilter } from '../SearchFilter/SearchFilter';
+import { Modal } from '../Modal/Modal';
 import './Home.scss';
 
 export const Home = () => {
@@ -10,6 +11,7 @@ export const Home = () => {
       <h2 className="subtitle">Slider</h2>
       <Slider />
       <h2 className="subtitle">Modal window</h2>
+      <Modal />
       <h2 className="subtitle">Search filter</h2>
       <SearchFilter />
     </div>
