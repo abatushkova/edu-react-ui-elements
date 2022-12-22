@@ -20,7 +20,7 @@
     width: 100%;
     margin-bottom: 2.4rem;
     @include tablet {
-      width: calc(50% - 2rem);
+      width: calc(50% - 1.6rem);
     }
   }
 
@@ -80,14 +80,17 @@
     border: 2px solid $color-in-input;
     border-radius: 50%;
     cursor: pointer;
+    &:not(:checked):hover {
+      box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    }
     &:checked {
       background-image: radial-gradient($color-in-input 40%, $white 40%);
     }
   }
 
   &__info {
-    margin-top: .4rem;
     padding: 0 1.6rem;
+    margin-top: .4rem;
     font: 1.2rem/1.6rem a;
     font-family: inherit;
   }
@@ -104,7 +107,7 @@
   }
 
   &__button {
-    width: calc(50% - 2rem);
+    width: calc(50% - 1.6rem);
     height: 5rem;
     padding: 0 2.4rem;
     font-weight: 500;
