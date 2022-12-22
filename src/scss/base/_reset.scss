@@ -104,6 +104,6 @@ a {
   cursor: pointer;
 }
 
-// :focus:not(:focus-visible){
-//   outline: 0;
-// }
+:focus:not(:focus-visible){
+  outline: 0;
+}
