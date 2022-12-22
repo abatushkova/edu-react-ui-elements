@@ -2,7 +2,7 @@ import React from 'react';
 import { Slider } from '../Slider/Slider';
 import { SearchFilter } from '../SearchFilter/SearchFilter';
 import { Modal } from '../Modal/Modal';
-import './Home.scss';
+import { Form } from '../Form/Form';
 
 export const Home = () => {
   return (
@@ -14,6 +14,8 @@ export const Home = () => {
       <Modal />
       <h2 className="subtitle">Search filter</h2>
       <SearchFilter />
+      <h2 className="subtitle">Registration form</h2>
+      <Form />
     </div>
   );
 }
