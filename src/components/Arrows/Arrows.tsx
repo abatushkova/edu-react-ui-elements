@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { SliderContext } from '../Slider/Slider';
+import { SliderContext } from '../../context/SliderContext';
 import './Arrows.scss';
 
 export const Arrows = () => {

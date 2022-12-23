@@ -1,23 +1,10 @@
-import React, { useState, createContext } from 'react';
-import { images, IImageModel } from '../../store/images';
+import React, { useState } from 'react';
+import { images } from '../../store/images';
 import { Arrows } from '../Arrows/Arrows';
 import { Dots } from '../Dots/Dots';
 import { SliderItem } from '../SliderItem/SliderItem';
+import { SliderContext } from '../../context/SliderContext';
 import './Slider.scss';
-
-export interface IContextModel {
-  slides: IImageModel[];
-  slideIndex: number;
-  changeSlide: (p: number) => void;
-  goToSlide: (p: number) => void;
-}
-
-export const SliderContext = createContext<IContextModel>({
-  slides: [],
-  slideIndex: 0,
-  changeSlide: () => {},
-  goToSlide: () => {},
-});
 
 export const Slider = () => {
   const [slide, setSlide] = useState(0);
@@ -49,13 +36,13 @@ export const Slider = () => {
           goToSlide,
         }}
       >
-        { items.length > 0 ? (
+        {items.length > 0 ? (
           <>
             <Arrows />
             <SliderItem slide={items[slide]} />
             <Dots />
           </>
-        ) : null }
+        ) : null}
       </SliderContext.Provider>
     </div>
   );
