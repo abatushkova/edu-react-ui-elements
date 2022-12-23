@@ -19,6 +19,10 @@
     background-color: rgba(0, 0, 0, .5);
   }
 
+  &__overlay--opened {
+    animation: fadeIn 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   &__box {
     position: relative;
     width: 100%;
@@ -31,6 +35,10 @@
       max-width: 60rem;
       padding: 6.4rem 4.8rem;
     }
+  }
+
+  &__box--opened {
+    animation: slideIn 300ms cubic-bezier(0.2, 0, 0, 1);
   }
 
   &__button {
@@ -73,5 +81,25 @@
     height: 1em;
     transform: translateX(0);
     background: inherit;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -15,8 +15,14 @@ export const Modal = () => {
   return (
     <div className="modal mb-3">
       {isActive ? (
-        <div className="modal__overlay" onClick={handleClickClose}>
-          <div className="modal__box" onClick={e => e.stopPropagation()}>
+        <div
+          className={`${isActive ? "modal__overlay modal__overlay--opened" : "modal__overlay"}`}
+          onClick={handleClickClose}
+        >
+          <div
+            className={`${isActive ? "modal__box modal__box--opened" : "modal__box"}`}
+            onClick={e => e.stopPropagation()}
+          >
             <p className="modal__text">Scandinavia is a subregion in Northern Europe, with strong historical, cultural, and linguistic ties between its constituent peoples. In English usage, Scandinavia most commonly refers to Denmark, Norway, and Sweden.</p>
             <button
               type="button"
