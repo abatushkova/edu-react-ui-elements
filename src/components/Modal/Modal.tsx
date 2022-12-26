@@ -2,25 +2,25 @@ import React, { useState } from 'react';
 import './Modal.scss';
 
 export const Modal = () => {
-  const [isActive, setIsActive] = useState(false);
+  const [isModalOpened, setIsModalOpened] = useState(false);
 
   const handleClickOpen = () => {
-    setIsActive(true);
+    setIsModalOpened(true);
   };
 
   const handleClickClose = () => {
-    setIsActive(false);
+    setIsModalOpened(false);
   };
 
   return (
-    <div className="modal mb-3">
-      {isActive ? (
+    <div className="modal gap-y">
+      {isModalOpened ? (
         <div
-          className={`${isActive ? "modal__overlay modal__overlay--opened" : "modal__overlay"}`}
+          className={`${isModalOpened ? "modal__overlay modal__overlay--opened" : "modal__overlay"}`}
           onClick={handleClickClose}
         >
           <div
-            className={`${isActive ? "modal__box modal__box--opened" : "modal__box"}`}
+            className={`${isModalOpened ? "modal__box modal__box--opened" : "modal__box"}`}
             onClick={e => e.stopPropagation()}
           >
             <p className="modal__text">Scandinavia is a subregion in Northern Europe, with strong historical, cultural, and linguistic ties between its constituent peoples. In English usage, Scandinavia most commonly refers to Denmark, Norway, and Sweden.</p>

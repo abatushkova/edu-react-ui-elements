@@ -27,7 +27,7 @@ export const Slider = () => {
   };
 
   return (
-    <div className="slider mb-3">
+    <div className="slider gap-y">
       <SliderContext.Provider
         value={{
           slides: items,

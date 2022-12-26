@@ -12,7 +12,7 @@ export const SearchFilter = () => {
   };
 
   return (
-    <div className="search mb-3">
+    <div className="search gap-y">
       <SearchBar
         query={query}
         onChange={(e) => handleChange(e)}

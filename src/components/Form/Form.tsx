@@ -50,7 +50,7 @@ export const Form = () => {
 
   if (status === 'success') {
     return (
-      <div className="form-success mb-3">
+      <div className="form-success gap-y">
         <p className="subheader">
           You successfully created an account!
         </p>
@@ -59,7 +59,7 @@ export const Form = () => {
   }
 
   return (
-    <form className="form mb-3" onSubmit={handleClickSubmit}>
+    <form className="form gap-y" onSubmit={handleClickSubmit}>
       <div className="form__item form__item--action">
         <input type="text" name="firstName"
           className="form__input"
