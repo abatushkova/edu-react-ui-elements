@@ -1,5 +1,6 @@
 # UI elements
 Educational project with UI elements such as responsive navbar (useEffect, React Router), modal window, registration form with submit preloader, search filter, image slider (useContext).  
+[Live Demo](https://abatushkova.github.io/edu-react-ui-elements/)
 
 ## Built with
 - Create React App
