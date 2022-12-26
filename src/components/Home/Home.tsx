@@ -12,10 +12,10 @@ export const Home = () => {
       <Slider />
       <h2 className="subtitle">Modal window</h2>
       <Modal />
-      <h2 className="subtitle">Search filter</h2>
-      <SearchFilter />
       <h2 className="subtitle">Registration form</h2>
       <Form />
+      <h2 className="subtitle">Search filter</h2>
+      <SearchFilter />
     </div>
   );
 }
