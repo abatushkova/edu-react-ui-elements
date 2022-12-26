@@ -1,8 +1,8 @@
 # UI elements
-Educational project with UI elements such as responsive navbar, modal window, simple registration form, search filter, image slider.  
+Educational project with UI elements such as responsive navbar, modal window, registration form, search filter, image slider.  
 
 ## Built with
-- Create React App
+- Create React App (with useState, useContext, React Router)
 - TypeScript
 - Sass (.scss)
 - Flexbox layout
