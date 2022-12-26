@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/edu-react-ui-elements/static/css/main.379e3d32.css",
+    "main.js": "/edu-react-ui-elements/static/js/main.1a04db18.js",
+    "index.html": "/edu-react-ui-elements/index.html",
+    "main.379e3d32.css.map": "/edu-react-ui-elements/static/css/main.379e3d32.css.map",
+    "main.1a04db18.js.map": "/edu-react-ui-elements/static/js/main.1a04db18.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.379e3d32.css",
+    "static/js/main.1a04db18.js"
+  ]
+}
