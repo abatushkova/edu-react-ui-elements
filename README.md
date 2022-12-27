@@ -12,7 +12,7 @@ Educational project with UI elements such as responsive navbar (useEffect, React
 You will need node and npm installed globally on your machine.
 ```
 $ git clone https://github.com/abatushkova/edu-react-ui-elements.git
-$ cd edu-menu
+$ cd ui-elements
 $ npm install
 ```
 
