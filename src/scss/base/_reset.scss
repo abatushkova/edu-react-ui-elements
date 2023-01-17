@@ -12,8 +12,8 @@ body {
   margin: 0;
   box-sizing: border-box;
   line-height: 1.5;
-  background-color: $white;
-  color: $gray-1;
+  background-color: var(--color-background);
+  color: var(--color-text);
   overflow-x: hidden;
   font-family: 'Roboto', Arial, sans-serif;
   -ms-text-size-adjust: 100%;

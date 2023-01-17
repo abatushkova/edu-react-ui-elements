@@ -3,9 +3,22 @@ $color-surface: #dfe1e5;
 $color-button: #ffe755;
 $color-on-button: #ffef85;
 $white: #fff;
-$gray-1: #111;
+$white-c: #c4c7c5;
+$gray-1: #1f1f1f;
 $gray-4: #444;
 $gray-9: #999;
 $error: #c31d1f;
 $success: #376a20;
 $color-in-input: #f5d000;
+
+html.light {
+  --color-text: #{$gray-1};
+  --color-text-pre-hover: #{$gray-4};
+  --color-background: #{$white};
+}
+
+html.dark {
+  --color-text: #{$white};
+  --color-text-pre-hover: #{$white-c};
+  --color-background: #{$gray-1};
+}

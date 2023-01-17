@@ -1,0 +1,13 @@
+.theme {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__toggler {
+    width: 8rem;
+    height: 4rem;
+    background-color: hotpink;
+    font: 1.6rem/2.4rem a;
+    font-family: inherit;
+  }
+}
