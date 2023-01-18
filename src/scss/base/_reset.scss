@@ -1,5 +1,27 @@
 @use '../abstracts' as *;
 
+html.light {
+  --color-text: #{$gray-1};
+  --color-text-pre-hover: #{$gray-4};
+  --color-background: #{$white};
+  --color-surface: #{$color-surface};
+  --color-primary: #{$primary-light};
+  --color-button: #{$color-button-light};
+  --color-on-button: #{$color-on-button-light};
+  --color-in-input: #{$color-in-input-light};
+}
+
+html.dark {
+  --color-text: #{$white};
+  --color-text-pre-hover: #{$white-d};
+  --color-background: #{$gray-1};
+  --color-surface: #{$gray-5};
+  --color-primary: #{$primary-dark};
+  --color-button: #{$color-button-dark};
+  --color-on-button: #{$color-on-button-dark};
+  --color-in-input: #{$color-in-input-dark};
+}
+
 html, body {
   height: 100%;
 }
@@ -68,7 +90,7 @@ select {
 
 select {
   width: 100%;
-  background-color: transparent;
+  background-color: $transparent;
   line-height: inherit;
   cursor: inherit;
   &::-ms-expand {
@@ -83,7 +105,7 @@ input::-moz-focus-inner {
 }
 
 button {
-  background-color: transparent;
+  background-color: $transparent;
   color: inherit;
   border-width: 0;
   padding: 0;

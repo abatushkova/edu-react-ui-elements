@@ -1,24 +1,19 @@
-$primary: #fffcc7;
-$color-surface: #dfe1e5;
-$color-button: #ffe755;
-$color-on-button: #ffef85;
+$transparent: rgba(255, 255, 255, 0);
+$primary-light: #fffcc7;
+$primary-dark: #A04203;
 $white: #fff;
-$white-c: #c4c7c5;
+$white-d: #dfe1e5;
 $gray-1: #1f1f1f;
+$gray-2: #2c2f31;
 $gray-4: #444;
+$gray-5: #555;
 $gray-9: #999;
 $error: #c31d1f;
-$success: #376a20;
-$color-in-input: #f5d000;
-
-html.light {
-  --color-text: #{$gray-1};
-  --color-text-pre-hover: #{$gray-4};
-  --color-background: #{$white};
-}
-
-html.dark {
-  --color-text: #{$white};
-  --color-text-pre-hover: #{$white-c};
-  --color-background: #{$gray-1};
-}
+$success: #448526;
+$color-surface: #dfe1e5;
+$color-button-light: #ffe755;
+$color-button-dark: #E07B00;
+$color-on-button-light: #ffef85;
+$color-on-button-dark: #F48701;
+$color-in-input-light: #f5d000;
+$color-in-input-dark: #FA7921;

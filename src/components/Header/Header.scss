@@ -1,6 +1,4 @@
-@use '../../scss/abstracts' as *;
-
 .header {
   padding: 1.6rem 0;
-  background-color: $primary;
+  background-color: var(--color-primary);
 }

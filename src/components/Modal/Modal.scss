@@ -1,7 +1,6 @@
 @use '../../scss/abstracts' as *;
 
 .modal {
-  color: $gray-4;
   font: 1.6rem/2.4rem a;
   font-family: inherit;
 
@@ -30,7 +29,7 @@
     padding: 4.8rem 3.2rem;
     box-sizing: border-box;
     border-radius: 1.6rem;
-    background-color: $white;
+    background-color: var(--color-background);
     @include desktop {
       max-width: 60rem;
       padding: 6.4rem 4.8rem;
@@ -42,10 +41,11 @@
   }
 
   &__button {
+    color: var(--color-text-pre-hover);
     &:focus,
     &:hover {
-      background-color: $color-on-button;
-      color: $gray-1;
+      background-color: var(--color-on-button);
+      color: var(--color-text);
     }
   }
 
@@ -63,7 +63,7 @@
     padding: 0 2.4rem;
     margin: 0 auto;
     font-weight: 500;
-    background-color: $color-button;
+    background-color: var(--color-button);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     &:active {
       box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
