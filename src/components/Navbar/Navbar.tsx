@@ -1,11 +1,21 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
+import { getTheme } from '../../utils/helpers/getTheme';
 import './Navbar.scss';
 
 export const Navbar = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [theme, setTheme] = useState(getTheme());
   const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
+
+  const toggleTheme = () => {
+    if (theme === 'dark') {
+      setTheme('light');
+    } else {
+      setTheme('dark')
+    }
+  };
 
   const handleClickToggle = () => {
     setIsMenuOpened(!isMenuOpened);
@@ -27,6 +37,10 @@ export const Navbar = () => {
     }
   }, []);
 
+  useEffect(() => {
+    document.documentElement.className = theme;
+  }, [theme]);
+
   return (
     <nav className="navbar">
       <div className="navbar__logo">
@@ -44,6 +58,15 @@ export const Navbar = () => {
         </li>
         <li>
           <NavLink to="/blog" className="navbar__link">Blog</NavLink>
+        </li>
+        <li>
+          <button
+            type="button"
+            className="navbar__theme"
+            onClick={toggleTheme}
+          >
+            {theme === 'dark' ? 'Light' : 'Dark'}
+          </button>
         </li>
       </ul>
       <button
