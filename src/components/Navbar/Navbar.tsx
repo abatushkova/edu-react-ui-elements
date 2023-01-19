@@ -6,7 +6,7 @@ import './Navbar.scss';
 export const Navbar = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const [theme, setTheme] = useState(getTheme());
+  const [theme, setTheme] = useState(getTheme);
   const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
 
   const toggleTheme = () => {
